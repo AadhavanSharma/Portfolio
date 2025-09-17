@@ -19,7 +19,7 @@ interface GridProps {
   style?: React.CSSProperties;
 
   ref?: React.ForwardedRef<HTMLDivElement|null>;
-  deg:number|0;
+  deg?:number|0;
 }
 
 function Placeholder({ size = 20 }: Pick<GridProps, "size">) {

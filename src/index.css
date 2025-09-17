@@ -4,6 +4,31 @@
 
 /* @custom-variant dark (&:is(.dark *)); */
 
+/* In your main CSS file or a style block */
+html {
+  /* Apply scrollbar colors using Tailwind's color palette */
+  scrollbar-color: theme('colors.blue.800') theme('colors.gray.200'); /* thumb track */
+  scrollbar-width: auto; /* or auto */
+}
+
+html::-webkit-scrollbar {
+  width: 8px; /* Set scrollbar width */
+}
+
+html::-webkit-scrollbar-track {
+  background: theme('colors.gray.200'); /* Style the track */
+}
+
+html::-webkit-scrollbar-thumb {
+  background: theme('colors.blue.500'); /* Style the thumb */
+  border-radius: 4px; /* Add rounded corners to the thumb */
+}
+
+/* Optional: Add hover styles for the thumb */
+html::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.blue.700');
+}
+
 @font-face{
   font-family: 'English Towne';
   src: url('/fonts/EnglishTowne.ttf') format('truetype');

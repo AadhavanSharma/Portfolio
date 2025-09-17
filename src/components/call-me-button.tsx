@@ -37,7 +37,7 @@ const CallButtonStyle: React.CSSProperties = {
 const EmailMeButton = ()=>{
     return (
         <div id="call-me-button"  style = {MailbuttonStyle} className="border-2 bg-black">
-            <a href="mailto:aadhavansharma5700@gmail.com" className="size-16 flex items-center justify-center" onClick={()=>window.open("https://www.gmail.com")}>
+            <a href="mailto:aadhavansharma5700@gmail.com" className="size-10 flex items-center justify-center" onClick={()=>window.open("https://www.gmail.com")}>
                 <img src="/gmail/gmail26.svg" alt="Mail Me" className="w-full" />
             </a>
         </div>
@@ -61,6 +61,7 @@ const MailbuttonStyle: React.CSSProperties = {
 };
 
 function CallMeButton(){
+  // return <></>
     const {width} = useWindowDimensions();
     if(width>=760){return (<EmailMeButton/>)}
     return <CallButton/>
