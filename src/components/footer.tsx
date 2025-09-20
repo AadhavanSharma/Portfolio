@@ -60,14 +60,14 @@ const Footer = () => {
                     LinkedIn Profile
                     Github Profile
                   */}
-                  <div className="border-0 row-span-1 flex items-center justify-start border-green-400 underline text-purple-700">
+                  <div className="border-0 row-span-1 flex items-center justify-start border-green-400 underline-offset-4 underline text-purple-700">
                     <div>
                       <GradientText
                       colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
                       animationSpeed={3}
                       showBorder={false}
                       className="border-0 p-2 text-lg md:text-3xl italic"
-                      >Contact Me
+                      >Let's Connect
                       </GradientText>
                     </div>
                   </div>
@@ -121,7 +121,7 @@ const Footer = () => {
                 <img className="border-2 border-gray-600 rounded" src="main-building.jpg" alt="MNNIT" />
               </div>
             </div>
-            <div className="border-0 row-span-10 flex items-center justify-center text-xl text-gray-400 h-full w-fit mx-auto">
+            <div className="border-0 row-span-10 flex items-center justify-center text-sm md:text-xl text-gray-400 h-full w-fit mx-auto">
                 Made with ❤️ by &copy; Aadhavan Sharma
             </div>            
         </div>

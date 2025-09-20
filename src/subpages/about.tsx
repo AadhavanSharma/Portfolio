@@ -46,7 +46,7 @@ const MainAbout = ()=>{
     },[divRef]);
 
     return (
-        <div className="scroll-mt-[118px]">
+        <div className="">
             <div className="border-0 border-red-500 flex items-center justify-around grid-cols-3 h-96 ">
                 <div className="w-1/6 lg:w-1/4 border-0 h-full "></div>
                 <div className="grid grid-rows-10 w-90/100 lg:w-2/4 border-3 h-full bg-gray-50/80">

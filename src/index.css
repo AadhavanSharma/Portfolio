@@ -68,6 +68,11 @@ html::-webkit-scrollbar-thumb:hover {
   background-size: 300% 100%;
   animation: slide-right 3s linear infinite;
 }
+#project-card{
+  background:repeating-linear-gradient(90deg,#ffe7e0, #ffd5cc 25%, #ffd0df 50%, #ffdae6 75%,#ffe7e0 100%);
+  background-size: 200% 100%;
+  animation: slide-right 2s linear infinite;
+}
 #call-me-button {
   background:repeating-linear-gradient(90deg,#ffd7cc, #ffc2b4 25%, #ffc4d7 50%, #ffcddd 75%,#ffd7cc 100%);
   background-size: 200% 100%;
