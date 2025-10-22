@@ -6,7 +6,7 @@ type WorkExpProps = {};
 const WorkExp = forwardRef<HTMLDivElement,WorkExpProps>((props, ref) => {
     props;
   return (
-    <div ref = {ref} className="scroll-mt-[118px]"> 
+    <div ref = {ref} className="scroll-mt-[150px]"> 
         <AnimatedBeam>
             <InsideWorkExp/>
         </AnimatedBeam>

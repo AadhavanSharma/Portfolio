@@ -11,7 +11,7 @@ type CertificatesProps = {};
 const Certificates = forwardRef<HTMLDivElement,CertificatesProps>((props, ref) => {
     props;
   return (
-    <div ref = {ref} className="scroll-mt-[118px] border-0">
+    <div ref = {ref} className="scroll-mt-[150px] border-0">
         <div style = {{fontFamily:"English Towne"}} className="border-0 flex items-center justify-center h-10 text-5xl text-gray-700/90 my-4">
             Certifications
         </div>

@@ -10,7 +10,7 @@ import Grid from "@/animata/background/grid";
 const Academics = forwardRef<HTMLDivElement,AcadProps>((p,ref) => {
     p;
   return (
-      <Grid ref = {ref} size={90} deg={45} className="border-0 border-black my-8 scroll-mt-[118px]" children = {<Yup/>}>
+      <Grid ref = {ref} size={90} deg={45} className="border-0 border-black my-8 scroll-mt-[150px]" children = {<Yup/>}>
       </Grid>
   )
 });
