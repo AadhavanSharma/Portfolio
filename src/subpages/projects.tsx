@@ -1,5 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { MessageCircle } from "lucide-react";
 import { forwardRef } from "react";
 
 type ProjectProps = {};
@@ -210,6 +211,39 @@ const Projects = forwardRef<HTMLDivElement,ProjectProps>((props, ref) => {
                 <CardHeader>
                     <CardTitle><img className="size-16" src="project-icons/offloading.png" alt="skymate" /></CardTitle>
                     <CardDescription className="text-lg md:text-3xl">Computational Offloading</CardDescription>
+                    <CardAction className="my-auto"><a href="https://github.com/AadhavanSharma/Computational_offloading_dec_making" target="_blank" ><img className="size-14 p-3 bg-white/20 border-0 rounded-full" src="external-link.png"  alt="external-link" /></a></CardAction>
+                </CardHeader>
+                <CardContent>
+                    <p>Optimizing Computing Offloading with Q-Learning - based reinforcement learning model in Python using Jupyter Notebook to optimize resource utilization in computing offloading. The algorithm learns optimal decision policies for dynamically selecting offloading strategies, resulting in improved efficiency and reduced computational overhead.</p>
+                </CardContent>
+                <CardFooter className="gap-4">
+                    <div>Tech Stack :</div>
+                    <div className="*:data-[slot=avatar]:rounded-full *:data-[slot=avatar]:border-2 *:data-[slot=avatar]:border-gray-300 flex -space-x-2">
+                        <Avatar>
+                            <AvatarImage src="https://github.com/github.png" alt="@shadcn" />
+                            <AvatarFallback>CN</AvatarFallback>
+                        </Avatar>
+                        <Avatar>
+                            <AvatarImage src="https://github.com/reactjs.png" alt="@leerob" />
+                            <AvatarFallback>LR</AvatarFallback>
+                        </Avatar>
+                        <Avatar>
+                            <AvatarImage
+                                src="https://raw.githubusercontent.com/github/explore/refs/heads/main/topics/typescript/typescript.png"
+                                alt="@evilrabbit"
+                            />
+                            <AvatarFallback>ER</AvatarFallback>
+                        </Avatar>
+                    </div>
+                </CardFooter>
+            </Card>
+            <Card id="project-card" className="border-1 border-red-200/80 shadow-2xl mx-auto lg:w-7/8 col-span-1 text-red-900">
+                <CardHeader>
+                    <CardTitle className="">
+                        {/* <img className="size-16" src="project-icons/offloading.png" alt="skymate" /> */}
+                        <MessageCircle className="size-12 text-blue-700 "/>
+                    </CardTitle>
+                    <CardDescription className="text-lg md:text-3xl">Discourse - Chat Application</CardDescription>
                     <CardAction className="my-auto"><a href="https://github.com/AadhavanSharma/Computational_offloading_dec_making" target="_blank" ><img className="size-14 p-3 bg-white/20 border-0 rounded-full" src="external-link.png"  alt="external-link" /></a></CardAction>
                 </CardHeader>
                 <CardContent>
