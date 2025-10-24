@@ -12,12 +12,12 @@ const Certificates = forwardRef<HTMLDivElement,CertificatesProps>((props, ref) =
     props;
   return (
     <div ref = {ref} className="scroll-mt-[118px] border-0">
-        <div style = {{fontFamily:"English Towne"}} className="border-0 flex items-center justify-center h-10 text-5xl text-gray-700/90 my-4">
+        <div style = {{fontFamily:"English Towne"}} className="border-0 text-gray-300 flex items-center justify-center h-10 text-5xl my-4">
             Certifications
         </div>
-        <div className=" grid md:flex md:items-center md:justify-evenly grid-cols-1 md:grid-cols-2 p-4 gap-4 border-y-3 border-gray-300 bg-gray-50 h-128 md:h-fit">
+        <div className=" grid md:flex md:items-center md:justify-evenly grid-cols-1 md:grid-cols-2 p-4 gap-4 border-y-0 border-gray-300 bg-gray-0 h-128 md:h-fit">
 
-            <div className="w-fit bg-gray-400/40 p-2 rounded text-center shine-effect shadow-2xl">
+            <div className="w-fit bg-gray-300/80 p-2 rounded text-center shine-effect shadow-2xl">
                 <Dialog>
                     <DialogTrigger>
                         <div className="uppercase lg:text-lg text-gray-600/60 font-bold font-mono">
@@ -41,7 +41,7 @@ const Certificates = forwardRef<HTMLDivElement,CertificatesProps>((props, ref) =
                     </div>
                 </Dialog>
             </div>
-                        <div className="w-fit bg-gray-400/40 p-2 rounded text-center shine-effect shadow-2xl ">
+                        <div className="w-fit bg-gray-300/80 p-2 rounded text-center shine-effect shadow-2xl ">
                 <Dialog>
                     <DialogTrigger className="border-green-500">
                         <CycleText />

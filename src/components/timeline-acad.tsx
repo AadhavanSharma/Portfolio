@@ -11,7 +11,7 @@ import useWindowDimensions from '@/hooks/window-dimensions';
 const TimelineAcad = () => {
   const {width} = useWindowDimensions();
   return (
-    <div className="grid grid-rows-100 min-w-full h-160 border-0">
+    <div className=" grid grid-rows-100 min-w-full h-160 border-0">
       <div className=" row-span-40 grid grid-cols-4 min-w-full border-0">
         <div className="grid col-span-1 border-0 justify-end">
           <TimelineSeparator sx={{margin:"auto auto",display:"flex",alignItems:"center",justifyContent:"center"}} className="border-0 h-60 row-span-10 flex justify-center">
@@ -27,8 +27,8 @@ const TimelineAcad = () => {
         </div>
         <div className="grid col-span-3 border-0 border-green-500 justify-start">
           <TimelineContent className="" sx={{ py: '12px', px: 2,border:0 }}>
-            <Typography style ={{fontFamily:"English Towne",}} className=" border-0 flex justify-center" variant="h6" component="div">
-              <p className='text-3xl text-gray-700/80'>
+            <Typography style ={{fontFamily:"English Towne"}} className=" border-0 flex justify-center" variant="h6" component="div">
+              <p className='text-3xl text-gray-300/80'>
                 High School 
               </p>
             </Typography>
@@ -41,9 +41,9 @@ const TimelineAcad = () => {
               </p>
             </Typography>
             <Typography className="border-0 text-center" >
-              <div className='border-y-1 italic text-gray-700/80 font-serif'>Scored 93% in XII<sup>th</sup> Board</div>
+              <div className='border-y-1 italic text-gray-300/80 font-serif'>Scored 93% in XII<sup>th</sup> Board</div>
               Completed in Science (P.C.M.) With as Geospatial Technology.
-              {width>=508 && <p  className='italic bold text-gray-700 inline-block'><span>Along with it, I also
+              {width>=508 && <p  className='bold inline-block'><span>Along with it, I also
               prepared for JEE, Secured </span>AIR 5719 in JEE Mains</p>}
             </Typography>
           </TimelineContent>
@@ -66,7 +66,7 @@ const TimelineAcad = () => {
         <div className="grid col-span-3 border-0 border-red-500 justify-start">
           <TimelineContent className="" sx={{ py: '12px', px: 2,border:0 }}>
             <Typography style ={{fontFamily:"English Towne"}} className=" border-0 flex justify-center" variant="h6" component="div">
-              <p className='text-3xl text-gray-700/80'>
+              <p className='text-3xl text-gray-300/80'>
                 Bachelor's Degree 
               </p>
             </Typography>
@@ -74,7 +74,7 @@ const TimelineAcad = () => {
               NIT Allahabad<small style ={{fontFamily:"English Towne",}} className='text-lg'>⟨2020-24⟩</small>
             </Typography>
             <Typography className="border-0 text-center" >
-              <div className='border-y-1 text-gray-700/80 font-serif'>
+              <div className='border-y-1 text-gray-300/80 font-serif'>
                 Scored 7.31 ⟨<small className='text-xs italic'>out of</small> 10⟩ CPI
               </div>
               Completed my graduation from Computer Science Department in <span className='font-serif'>I.T.</span> Branch.

@@ -79,7 +79,7 @@ export function Desktop({onAbout, onAcademics, onWorkExp, onProjects, onCertific
 //   };
 
     const k = useWindowDimensions();
-    const styl = "border-b-2 border-white hover:border-black hover:bg-gray-50 rounded-none h-full m-auto text-md lg:text-md transition-all duration-300 cursor-pointer";
+    const styl = "border-b-2 border-black/0 hover:border-white rounded-none h-full m-auto text-md lg:text-md transition-all duration-300 cursor-pointer";
     return(
     <div className="grid h-full grid-cols-5 border-green-800 border-0">
         <Button onClick = {onAbout} className={`${styl}`}>About</Button>

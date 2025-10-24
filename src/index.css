@@ -5,35 +5,58 @@
 /* @custom-variant dark (&:is(.dark *)); */
 
 /* In your main CSS file or a style block */
-html {
+/* html {
+  scrollbar-color: theme('colors.white'); 
+  scrollbar-width:auto; 
+} */
   /* Apply scrollbar colors using Tailwind's color palette */
-  scrollbar-color: theme('colors.blue.800') theme('colors.gray.200'); /* thumb track */
-  scrollbar-width: auto; /* or auto */
-}
+  /* thumb track */
+  /* or auto */
 
-html::-webkit-scrollbar {
-  width: 8px; /* Set scrollbar width */
-}
+/* html::-webkit-scrollbar {
+  width: 8px; 
+} */
+/* Set scrollbar width */
 
-html::-webkit-scrollbar-track {
-  background: theme('colors.gray.200'); /* Style the track */
-}
+/* html::-webkit-scrollbar-track {
+  background: theme('colors.gray.900'); 
+} */
+/* Style the track */
 
-html::-webkit-scrollbar-thumb {
-  background: theme('colors.blue.500'); /* Style the thumb */
-  border-radius: 4px; /* Add rounded corners to the thumb */
-}
+/* html::-webkit-scrollbar-thumb { */
+  /* background: theme('colors.blue.700');  */
+  /* Style the thumb */
+  /* border-radius: 4px;  */
+  /* Add rounded corners to the thumb */
+/* } */
 
 /* Optional: Add hover styles for the thumb */
-html::-webkit-scrollbar-thumb:hover {
-  background: theme('colors.blue.700');
-}
+/* html::-webkit-scrollbar-thumb:hover {
+  background: theme('colors.blue.900');
+} */
 
 @font-face{
   font-family: 'English Towne';
   src: url('/fonts/EnglishTowne.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+.shine-effect-2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(191, 200, 255, 0.5) 50%,rgba(255, 255, 255, 0) 100%);
+  transform: skewX(0deg);
+  animation: shine 5s infinite;
 }
 
 .shine-effect {
@@ -72,6 +95,12 @@ html::-webkit-scrollbar-thumb:hover {
   background:repeating-linear-gradient(90deg,#ffe7e0, #ffd5cc 25%, #ffd0df 50%, #ffdae6 75%,#ffe7e0 100%);
   background-size: 200% 100%;
   animation: slide-right 2s linear infinite;
+}
+#floating-island{
+  /* ["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"] */
+  background:repeating-linear-gradient(90deg,#40ffaa, #4079ff 25%, #40ffaa 50%, #4079ff 75%,#4079ff 100%);
+  background-size: 200% 100%;
+  animation: slide-right 0.5s linear infinite;
 }
 #call-me-button {
   background:repeating-linear-gradient(90deg,#ffd7cc, #ffc2b4 25%, #ffc4d7 50%, #ffcddd 75%,#ffd7cc 100%);

@@ -58,7 +58,7 @@ const techLogos = [
 
 function LogoCircle() {
   return (
-    <div className='border-0 border-red-400 ' style={{ position: 'relative', overflow: 'hidden'}}>
+    <div className='' style={{ position: 'relative', overflow: 'hidden'}}>
       <LogoLoop
         // logos={imageLogos}
         logos={techLogos}
@@ -68,8 +68,8 @@ function LogoCircle() {
         gap={isDesktop?60:40}
         pauseOnHover
         scaleOnHover
-        fadeOut
-        fadeOutColor="#ffffff"
+        // fadeOut
+        // fadeOutColor="#ffffff"
         ariaLabel="Technology partners"
       />
     </div>

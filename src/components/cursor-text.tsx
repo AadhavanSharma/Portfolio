@@ -10,9 +10,9 @@ export const CursorText = ()=>{
         pauseDuration={1200}
         showCursor={true}
         cursorCharacter="|"
-        style={{fontFamily:"Michroma"}}
+        style={{fontFamily:"Michroma", color:"white"}}
         // className='Michroma text-5xl'
-        className='absolute left-[20%] lg:left-[30%] border-0 sm:text-lg md:text-2xl lg:text-5xl font-bold shadow-xs'
+        className=' text-white absolute left-[20%] lg:left-[30%] border-0 sm:text-lg md:text-2xl lg:text-5xl font-bold shadow-xs'
         />
         </>)
     }

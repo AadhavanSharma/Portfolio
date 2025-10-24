@@ -43,7 +43,7 @@ export default function Dot({
   children,
   className,
   style = {
-    backgroundColor: "white",
+    backgroundColor: "white/0",
   },
 }: DotProps) {
   return (

@@ -6,20 +6,27 @@ import '../App.css'
 // import Grid from "@/animata/background/grid";
 // import Squares from "@/components/Squares";
 import CoreAcad from "@/components/core-acad";
-import Grid from "@/animata/background/grid";
+// import Grid from "@/animata/background/grid";
 const Academics = forwardRef<HTMLDivElement,AcadProps>((p,ref) => {
     p;
   return (
-      <Grid ref = {ref} size={90} deg={45} className="border-0 border-black my-8 scroll-mt-[118px]" children = {<Yup/>}>
-      </Grid>
+    <Yup ref = {ref}>
+
+    </Yup>
+      // <Grid ref = {ref} size={90} deg={45} className="border-0 border-black my-8 scroll-mt-[118px]" children = {<Yup/>}>
+      // </Grid>
   )
 });
 
-const Yup = ()=>{
+interface YupProps{
+  ref?: React.ForwardedRef<HTMLDivElement|null>;
+}
+
+const Yup = ({ref} : YupProps)=>{
  
   return (
-    <div className=" border-0 scroll-mt-[118px] grid-rows-10">
-        <p style = {{fontFamily:"English Towne"}} className="bg-white/50 mx-auto w-5/6 lg:w-1/2 border-2 border-black row-span-1 text-center text-2xl lg:text-5xl">My Academic Journey So far</p>
+    <div ref = {ref} className=" border-0 text-white scroll-mt-[118px] grid-rows-10">
+        <p style = {{fontFamily:"English Towne"}} className="my-8 mx-auto w-5/6 lg:w-1/2 border-0 border-white row-span-1 text-center text-2xl lg:text-5xl">My Academic Journey So far</p>
       <div className="border-0 border-red-300 row-span-9 flex items-center justify-around mb-0">
           <div className="w-1/12 lg:w-1/4 border-0 h-full "></div>
 

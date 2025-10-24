@@ -9,7 +9,7 @@ const Projects = forwardRef<HTMLDivElement,ProjectProps>((props, ref) => {
   return (
     <div ref = {ref} className="w-8/10 mx-auto scroll-mt-[140px] pt-1 mb-8">
         <div style = {{fontFamily:"English Towne"}}
-        className="border-y-2 border-gray-400 p-0 w-full absolute left-0 text-center text-3xl md:text-4xl bg-gray-0"
+        className="border-y-2 border-gray-400 p-0 w-full absolute left-0 text-center text-3xl md:text-4xl bg-gray-0 text-gray-300"
         >
             My Projects
         </div>

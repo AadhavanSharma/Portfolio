@@ -64,7 +64,7 @@ const TextType = ({
   }, [variableSpeed, typingSpeed]);
 
   const getCurrentTextColor = () => {
-    if (textColors.length === 0) return 'black';
+    if (textColors.length === 0) return 'white';
     return textColors[currentTextIndex % textColors.length];
   };
 

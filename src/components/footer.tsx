@@ -34,7 +34,7 @@ const Footer = () => {
   }
   return (
     <footer
-        className='border-3 h-fit p-4 bg-[#160627] flex justify-center'>
+        className='border-t-12 border-[#07012b] h-fit p-4 bg-[#060121] flex justify-center'>
         <div className='grid grid-cols-1 items-center justify-center border-0 w-full h-full grid-rows-100'>
             <div className="grid items-center sm:grid-cols-100 lg:grid-cols-120 border-0 col-span-full row-span-90 w-full h-full">
               <div className="col-span-20 md:col-span-40 border-0 border-gray-200 h-full w-full p-4 flex-row items-stretch justify-center">

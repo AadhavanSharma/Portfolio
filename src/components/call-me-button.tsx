@@ -63,7 +63,7 @@ const MailbuttonStyle: React.CSSProperties = {
 function CallMeButton(){
   // return <></>
     const {width} = useWindowDimensions();
-    if(width>=760){return (<EmailMeButton/>)}
+    if(width>=760){return (<></>)}
     return <CallButton/>
 }
 
