@@ -4,7 +4,7 @@ import useWindowDimensions from "@/hooks/window-dimensions";
 // import type { ForwardRefComponent } from "framer-motion";
 import { forwardRef, useRef } from "react"
 
-import {motion} from 'framer-motion';
+// import {motion} from 'framer-motion';
 
 // type SectionProps={
 //     aboutRef:React.RefObject<HTMLDivElement|null>;

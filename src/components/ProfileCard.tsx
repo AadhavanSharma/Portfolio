@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useCallback, useMemo } from 'react';
 import './ProfileCard.css';
 import useWindowDimensions from '@/hooks/window-dimensions';
-import GradientText from './GradientText';
-import { ArrowDown, ArrowLeft, Contact } from 'lucide-react';
+// import GradientText from './GradientText';
+// import { ArrowDown, ArrowLeft, Contact } from 'lucide-react';
 
 interface ProfileCardProps {
   avatarUrl: string;
@@ -60,7 +60,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   mobileTiltSensitivity = 5,
   miniAvatarUrl,
   name = 'Javi A. Torres',
-  title = 'Software Engineer',
+  // title = 'Software Engineer',
   handle = 'javicodes',
   status = 'Online',
   contactText = 'Contact',

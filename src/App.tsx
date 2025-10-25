@@ -1,7 +1,8 @@
-import {  Suspense, useRef } from 'react'
-import LoadingPage from './components/loading-page'
-import { AnimatePresence, motion } from 'framer-motion';
-import Beams from './components/Beams';
+import { useRef } from 'react'
+// import LoadingPage from './components/loading-page'
+// import { AnimatePresence } from 'framer-motion';
+import {motion} from 'framer-motion';
+// import Beams from './components/Beams';
 import Layout from './components/layout'
 import Plasma from './components/Plasma';
 

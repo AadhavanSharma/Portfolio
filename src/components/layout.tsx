@@ -6,9 +6,9 @@ import Header from "./header"
 import InfyLoop from './infy-loop';
 // import CallMeButton from "./call-me-button"
 import About from "../subpages/about"
-import AboutAtTop from "./front-page"
+// import AboutAtTop from "./front-page"
 import Academics from "../subpages/academics"
-import { useEffect, useRef, useState } from 'react'
+import { useRef } from 'react'
 import WorkExp from "@/subpages/work-exp"
 import Projects from "@/subpages/projects"
 import Certificates from "@/subpages/certificates"
