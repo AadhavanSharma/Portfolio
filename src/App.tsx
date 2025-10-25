@@ -2,8 +2,8 @@ import { useRef } from 'react'
 // import LoadingPage from './components/loading-page'
 // import { AnimatePresence } from 'framer-motion';
 import {motion} from 'framer-motion';
-// import Beams from './components/Beams';
 import Layout from './components/layout'
+// import Beams from './components/Beams';
 import Plasma from './components/Plasma';
 
 // function delayForDemo<T>(promise: Promise<T>): Promise<T> {

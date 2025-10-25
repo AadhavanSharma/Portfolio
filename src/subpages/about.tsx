@@ -65,7 +65,7 @@ const MainAbout = ({ref}:MainAboutProps)=>{
             <div className="border-0 border-red-500 flex items-center justify-around grid-cols-3">
                 <div className="w-1/6 lg:w-1/4 border-0 h-full "></div>
                 <div className="grid grid-rows-10 w-90/100 lg:w-2/4 border-0 h-full bg-gray-0/80">
-                    <div className="row-span-1 border-1 rounded-3xl border-yellow-400 text-blue-500/88 grid lg:text-2xl font-semibold  place-items-center justify-items-center backdrop-blur-lg bg-gray-0/30 shine-effect-2 shadow-xl">About Me</div>
+                    <div className="row-span-1 border-1 rounded-3xl border-yellow-400 text-blue-500/88 grid lg:text-2xl font-semibold max-h-12 place-items-center justify-items-center backdrop-blur-lg bg-gray-0/30 shine-effect-2 shadow-xl">About Me</div>
                     <div style={{position: 'relative',overflow: 'hidden'}} className="row-span-9 overflow-auto border-0 w-full lg:px-2 justify-center lg:text-xl/10 lg:font-semibold">
                         <div ref={divRef} className="h-full select-none scrollbar-thin scroll-smooth scrollbar-thumb-blue-900/60
                         hover:scrollbar-thumb-blue-700/60">

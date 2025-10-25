@@ -92,17 +92,17 @@ const Layout = ({scrollableRef}:LayoutProps) => {
                         </p>
                     </div>
 
-                    <div className=" text-gray-500 border-0 h-24 border-blue-300 grid grid-cols-2">
+                    <div className=" text-gray-500 border-0 h-24 border-blue-300 grid grid-cols-2 space-y-8 md:space-y-0">
                       {/* Resumes Open and Download Buttons */}
-                      <div className="border-0  border-amber-200 flex items-center justify-center md:col-span-1">
+                      <div className="border-0  border-amber-200 flex items-center justify-center col-span-2 md:col-span-1">
                         <ResumeWindow/>
                       </div>
-                      <div className="border-0 border-amber-200 flex items-center justify-center md:col-span-1">
+                      <div className="border-0 border-amber-200 flex items-center justify-center col-span-2 md:col-span-1">
                         {/* <ResumeWindow/> */}
                         <a target = "_blank" href="https://drive.google.com/file/d/10e--TUda8SSHu03GhRdvN3zCBF-LpcZA/view?usp=sharing" 
                         // className="cursor-pointer scale-140 border-0 shine-effect-2 rounded-xl underline px-4 py-1 flex gap-2 items-center"
-                          className="flex md:text-xl items-center cursor-pointer rounded-2xl underline underline-offset-1 py-3 px-2 gap-2 relative right-2">
-                        
+                          className="flex md:text-2xl items-center cursor-pointer rounded-2xl underline underline-offset-1 py-3 px-2 gap-2 relative right-2">
+
                           Download Resume
                           <Download className="text-gray-300"/>
                           {/* <img className="size-6" src="popup.png" alt="pdf"></img> */}
