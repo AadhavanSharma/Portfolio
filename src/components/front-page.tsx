@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar";
 import useWindowDimensions from "@/hooks/window-dimensions";
 import ResumeWindow from "./resume-window";
 
-const FirstPrint = () => {
+export const FirstPrint = () => {
   const { width } = useWindowDimensions();
   return (
     <div className="flex items-center justify-end backdrop-blur-lg border-1 rounded-3xl border-gray-300">
@@ -13,7 +13,7 @@ const FirstPrint = () => {
         }`}
       >
         {width < 760 && <NamePlate />}
-        <About />
+        <AboutAtTop />
       </div>
     </div>
   );
@@ -72,7 +72,7 @@ const CenterElement = () => {
   );
 };
 
-const About = () => {
+export const AboutAtTop = () => {
   const { width } = useWindowDimensions();
   var items = [
     "+918447103820",
@@ -122,4 +122,4 @@ const About = () => {
   );
 };
 
-export default FirstPrint;
+export default AboutAtTop;

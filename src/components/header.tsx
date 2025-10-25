@@ -29,7 +29,7 @@ const Header = ({aboutRef,academicsRef, workExpRef, projectsRef, certificatesRef
   };
 
   const scrollPosition = useElementScroll(scrollableRef);
-  const isScrolledDown = scrollPosition > 800;
+  const isScrolledDown = scrollPosition > 200;
 
   const contentClass = `
     p-4 rounded text-white z-2000 sticky w-full

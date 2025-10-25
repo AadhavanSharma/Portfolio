@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useCallback, useMemo } from 'react';
 import './ProfileCard.css';
 import useWindowDimensions from '@/hooks/window-dimensions';
 import GradientText from './GradientText';
+import { ArrowDown, ArrowLeft, Contact } from 'lucide-react';
 
 interface ProfileCardProps {
   avatarUrl: string;
@@ -281,13 +282,13 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
 
   return (
     <div ref={wrapRef} className={`pccardwrapper ${className}`.trim()} style={cardStyle}>
-      <section ref={cardRef} className="pc-card">
+      <section ref={cardRef} className="pc-card ">
         <div className="pcinside">
           <div className="pcshine" />
           <div className="pc-glare" />
           <div className="pccontent pc-avatar-content">
             <img
-              className={`scale-200 relative ${k.width>=768?"right-12":"right-8"}`}
+              className={`scale-230 relative ${k.width>=768?"right-12":"right-8"}`}
               src={avatarUrl}
               alt={`${name || 'User'} avatar`}
               loading="lazy"
@@ -315,38 +316,45 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                   <div className="pc-user-text">
                     <div className="pc-handle">
                       <div className='flex'>
-                        <div className='relative top-1'>{handle}</div>
+                        <div className='relative text-white top-1 font-thin md:text-lg'>{handle}</div>
                         <div className='border-0 flex items-center justify-end '>
-                          <img className='w-5 h-5 relative left-6' src="verified.png" alt="" />
+                          <img className='w-4 h-4 relative left-5 md:left-4 md:top-1.5 top-0.5' src="verified.png" alt="" />
                         </div>
                       </div>
                     </div>
-                    <div className="pc-status">{status}</div>
+                    <div className="font-thin text-[12px] md:text-[16px]">
+                      {status}
+                      </div>
                   </div>
                 </div>
-                <a
-                  className="pc-contact-btn"
-                  onClick={handleContactClick}
-                  style={{ pointerEvents: 'auto' }}
-                  type="button"
-                  aria-label={`Contact ${name || 'user'}`}
-                  href={`tel:${phoneNumber}`}
-                >
-                  {contactText}
-                </a>
+                    {
+                      k.width>768?
+                      <button
+                        className="pc-contact-btn cursor-pointer rounded-md min-h-8 flex items-center uppercase shine-effect-3 md:relative md:left-2"
+                        onClick={handleContactClick}
+                        style={{ pointerEvents: 'auto' }}
+                        type="button"
+                        aria-label={`Contact ${name || 'user'}`}
+                      >
+                        {contactText}
+                      </button>
+                        :
+                        <a
+                          className="pc-contact-btn rounded-md min-h-8 flex items-center uppercase shine-effect-3 md:relative md:left-2"
+                          style={{ pointerEvents: 'auto' }}
+                          type="button"
+                          aria-label={`Contact ${name || 'user'}`}
+                          href={`tel:${phoneNumber}`}
+                        >
+                          {contactText}
+                        </a>
+                    }
               </div>
             )}
           </div>
           <div className="pc-content">
             <div className={`pc-details `}>
               {/* <h3>{name}</h3> */}
-              <GradientText
-                colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                animationSpeed={12}
-                showBorder={false}
-                className={`${k.width<=320?"top-40":""} text-3xl relative ${k.width<=768?"bottom-5":"bottom-10 text-4xl"}`}
-                >Aadhavan Sharma
-                </GradientText>
               {/* <p className={`${k.width<=768?"-top-[40em]":""}`}>{title}</p> */}
             </div>
           </div>

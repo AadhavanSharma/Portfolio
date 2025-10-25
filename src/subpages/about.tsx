@@ -1,5 +1,5 @@
 // import Grid from "@/animata/background/grid";
-import GradualBlurMemo from "@/components/GradualBlur";
+// import GradualBlurMemo from "@/components/GradualBlur";
 import useWindowDimensions from "@/hooks/window-dimensions";
 // import type { ForwardRefComponent } from "framer-motion";
 import { forwardRef, useEffect, useRef, useState } from "react"
@@ -53,16 +53,16 @@ const MainAbout = ({ref}:MainAboutProps)=>{
 
     return (
         <div className="text-white scroll-mt-[150px]" ref={ref}>
-            <div className="border-0 border-red-500 flex items-center justify-around grid-cols-3 h-96 ">
+            <div className="border-0 border-red-500 flex items-center justify-around grid-cols-3">
                 <div className="w-1/6 lg:w-1/4 border-0 h-full "></div>
                 <div className="grid grid-rows-10 w-90/100 lg:w-2/4 border-0 h-full bg-gray-0/80">
                     <div className="row-span-1 border-1 rounded-3xl border-yellow-400 text-blue-500/88 grid lg:text-2xl font-semibold  place-items-center justify-items-center backdrop-blur-lg bg-gray-0/30 shine-effect-2 shadow-xl">About Me</div>
                     <div style={{position: 'relative',overflow: 'hidden'}} className="row-span-9 overflow-auto border-0 w-full lg:px-2 justify-center lg:text-xl/10 lg:font-semibold">
-                        <div ref={divRef} className="h-full select-none scrollbar-thin scroll-smooth overflow-y-scroll scrollbar-thumb-blue-900/60
+                        <div ref={divRef} className="h-full select-none scrollbar-thin scroll-smooth scrollbar-thumb-blue-900/60
                         hover:scrollbar-thumb-blue-700/60">
                             <Content/>                        
                         </div>
-                        {!isScrolledEnough && <GradualBlurMemo
+                        {/* {!isScrolledEnough && <GradualBlurMemo
                             target="parent"
                             position="bottom"
                             height="6rem"
@@ -72,7 +72,7 @@ const MainAbout = ({ref}:MainAboutProps)=>{
                             exponential={true}
                             opacity={1}
                             className="border-0"
-                            />}
+                            />} */}
                             
                     </div>
                 </div>

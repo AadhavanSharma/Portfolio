@@ -36,7 +36,7 @@ function DrawerDialogDemo() {
         <Tooltip>
             <TooltipTrigger>
                 <DrawerTrigger asChild>
-                    <div className="flex items-center cursor-pointer border-spacing-0 rounded-2xl underline bg-blue-200/40 py-2 px-1 gap-1 relative right-2">Open Resume<img className="size-6" src="popup.png"></img></div>
+                    <div className="flex items-center cursor-pointer border-spacing-0 rounded-2xl underline py-2 px-1 gap-1 relative right-2">Open Resume<img className="size-6" src="popup.png"></img></div>
                 </DrawerTrigger>
             </TooltipTrigger>
             <TooltipContent className=" bg-black text-white h-10 p-3 flex rounded-2xl items-center">
@@ -70,7 +70,7 @@ function DrawerDialogDemo() {
         <Tooltip>
             <TooltipTrigger>
                 <DrawerTrigger asChild>
-                    <div className="cursor-pointer border-1 rounded-2xl underline bg-blue-100/40 px-4 py-1 flex gap-2 items-center">Open Resume <img className="size-6" src="popup.png"></img></div>
+                    <div className="cursor-pointer scale-140 border-0 rounded-xl underline px-4 py-1 flex gap-2 items-center">Open Resume <img className="size-6" src="popup.png"></img></div>
                 </DrawerTrigger>
             </TooltipTrigger>
             <TooltipContent className=" bg-black text-white h-10 p-3 flex rounded-2xl items-center">

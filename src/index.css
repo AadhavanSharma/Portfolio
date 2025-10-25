@@ -42,6 +42,23 @@
   font-style: normal;
 }
 
+.shine-effect-3 {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect-3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(248, 255, 203, 0.223) 50%,rgba(255, 255, 255, 0) 100%);
+  transform: skewX(0deg);
+  animation: shine 2s infinite;
+}
+
 .shine-effect-2 {
   position: relative;
   overflow: hidden;

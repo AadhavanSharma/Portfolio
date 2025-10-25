@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { forwardRef, useState } from "react";
 import GradientText from "./GradientText"
 import { SiGithub } from "react-icons/si";
 
-const Footer = () => {
-
+type FooterProps = {};
+const Footer = forwardRef<HTMLDivElement,FooterProps>((props, ref)=> {
+  props;
   const [copy,setCopied] = useState(false);
   const [isEmailCopied,setIsEmailCopied] = useState(false);
   const mobileNumber = "8447103820";
@@ -33,8 +34,8 @@ const Footer = () => {
     }
   }
   return (
-    <footer
-        className='border-t-12 border-[#07012b] h-fit p-4 bg-[#060121] flex justify-center'>
+    <footer id="footRef"
+        className='border-t-12 border-[#030113] h-fit p-4 bg-[#040610] flex justify-center'>
         <div className='grid grid-cols-1 items-center justify-center border-0 w-full h-full grid-rows-100'>
             <div className="grid items-center sm:grid-cols-100 lg:grid-cols-120 border-0 col-span-full row-span-90 w-full h-full">
               <div className="col-span-20 md:col-span-40 border-0 border-gray-200 h-full w-full p-4 flex-row items-stretch justify-center">
@@ -61,7 +62,7 @@ const Footer = () => {
                     Github Profile
                   */}
                   <div className="border-0 row-span-1 flex items-center justify-start border-green-400 underline-offset-4 underline text-purple-700">
-                    <div>
+                    <div ref = {ref}>
                       <GradientText
                       colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
                       animationSpeed={3}
@@ -127,6 +128,6 @@ const Footer = () => {
         </div>
     </footer>
   )
-}
+})
 
 export default Footer
