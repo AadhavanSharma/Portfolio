@@ -44,7 +44,7 @@ const App:React.FC =()=> {
             opacity={0.8}          // Transparency
             mouseInteractive={false} // Mouse interaction
           />
-          <div ref = {scrollableRef} className='scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-black absolute inset-0 overflow-y-scroll'>
+          <div ref = {scrollableRef} className='scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-[#0a0d1d] absolute inset-0 overflow-y-scroll'>
             <Layout scrollableRef = {scrollableRef}/>
           </div>
         </div>
