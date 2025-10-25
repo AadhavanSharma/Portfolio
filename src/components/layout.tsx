@@ -77,22 +77,22 @@ const Layout = ({scrollableRef}:LayoutProps) => {
                       style = {{fontFamily :"Parkinsans"}}
                         className="tracking-widest bg-gradient-to-b from-[#f5ffbd] via-[#d7d8d0] to-[#9c9b6a] bg-clip-text text-transparent font-sans
                         px-2 mx-2 text-3xl flex items-center border-0 border-amber-300 md:text-5xl lg:text-5xl xl:text-7xl"
-                        text={["Hi there!", "Namaste!", "Sat Srī Akaal!", "Hola AmiGo!"]}
+                        text={["Hi there!", "Namaste!", "Sat Srī Akāl!", "Hola AmiGo!"]}
                         typingSpeed={50}
-                        pauseDuration={1500}
+                        pauseDuration={2000}
                         showCursor={false}
                         cursorCharacter="|"
                       />
                     </div>
                     
                     <div className="border-0 relative bottom-6 space-y-8 py-4 border-green-500">
-                      <div className="bg-gradient-to-b from-[#6663ff] via-white to-[#06048e] bg-clip-text text-transparent font-semibold px-2 mx-2 text-4xl md:text-4xl lg:text-7xl ">I'm Aadhavan Sharma</div>
-                      <p className="text-lg md:text-2xl px-2 mx-2 text-gray-400 font-mono">
+                      <div className=" text-gray-500 text-center font-thin px-2 mx-2 text-4xl md:text-4xl lg:text-7xl">I'm Aadhavan Sharma</div>
+                      <p className="text-lg md:text-2xl px-2 mx-2 text-gray-400 text-center md:text-left font-mono">
                         A Software Engineer passionate about designing, developing, testing, and deploying applications, from small projects to large-scale, high-performance architectures capable of serving a vast user base. 
                         </p>
                     </div>
 
-                    <div className=" border-0 h-24 border-blue-300 grid grid-cols-2">
+                    <div className=" text-gray-500 border-0 h-24 border-blue-300 grid grid-cols-2">
                       {/* Resumes Open and Download Buttons */}
                       <div className="border-0  border-amber-200 flex items-center justify-center md:col-span-1">
                         <ResumeWindow/>
@@ -104,7 +104,7 @@ const Layout = ({scrollableRef}:LayoutProps) => {
                           className="flex md:text-xl items-center cursor-pointer rounded-2xl underline underline-offset-1 py-3 px-2 gap-2 relative right-2">
                         
                           Download Resume
-                          <Download/>
+                          <Download className="text-gray-300"/>
                           {/* <img className="size-6" src="popup.png" alt="pdf"></img> */}
                         </a>
                       </div>

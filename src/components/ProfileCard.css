@@ -69,8 +69,8 @@
   position: relative;
   background-blend-mode: color-dodge, normal, normal, normal;
   animation: glow-bg 12s linear infinite;
-  box-shadow: rgba(80, 223, 251, 0.471) calc((var(--pointer-from-left) * 20px) - 8px)
-    calc((var(--pointer-from-top) * 40px) - 8px) 15px 5px;
+  box-shadow: rgba(25, 16, 110, 0.562) calc((var(--pointer-from-left) * 10px) - 8px)
+    calc((var(--pointer-from-top) * 10px) - 8px) 10px 5px;
   transition: transform 1s ease;
   transform: translate3d(0, 0, 0.1px) rotateX(0deg) rotateY(0deg);
   background-size: 100% 100%;

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const useElementScroll = (
-  elementRef: React.RefObject<HTMLElement | null>
+  elementRef: React.RefObject<HTMLDivElement | null>
 ) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const element = elementRef.current;

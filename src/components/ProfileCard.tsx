@@ -285,8 +285,8 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
       <section ref={cardRef} className="pc-card ">
         <div className="pcinside">
           <div className="pcshine" />
-          <div className="pc-glare" />
-          <div className="pccontent pc-avatar-content">
+          <div className="pcglare" />
+          <div className="pccontent pcavatar-content">
             <img
               className={`scale-230 relative ${k.width>=768?"right-12":"right-8"}`}
               src={avatarUrl}

@@ -2,7 +2,9 @@
 // import GradualBlurMemo from "@/components/GradualBlur";
 import useWindowDimensions from "@/hooks/window-dimensions";
 // import type { ForwardRefComponent } from "framer-motion";
-import { forwardRef, useEffect, useRef, useState } from "react"
+import { forwardRef, useRef } from "react"
+
+import {motion} from 'framer-motion';
 
 // type SectionProps={
 //     aboutRef:React.RefObject<HTMLDivElement|null>;
@@ -20,7 +22,14 @@ const About = forwardRef<HTMLDivElement,{}>((props, ref) => {
         deg={0}
         ref = {ref}
         /> */}
-        <MainAbout ref={ref}/>
+        {/* <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 3, ease:"easeInOut" }}
+            viewport={{ once: false, amount: 0.1 }}
+        >
+        </motion.div> */}
+            <MainAbout ref={ref}/>
     </>
   )
 })
@@ -31,25 +40,25 @@ interface MainAboutProps{
 // const MainAbout = forwardRef<HTMLDivElement,SectionProps>((props, ref)=>{
 const MainAbout = ({ref}:MainAboutProps)=>{
     const divRef = useRef<HTMLDivElement|null>(null);
-    const [isScrolledEnough, setIsScrolledEnough] = useState(false);
+    // const [isScrolledEnough, setIsScrolledEnough] = useState(false);
 
-    const handleScroll = ()=>{
-        if(divRef.current){
-            const {scrollHeight, scrollTop, clientHeight} = divRef.current;
-            const scrollPosition = scrollTop + clientHeight;
-            const scrollPercent = (scrollPosition/scrollHeight)*100;
-            if(scrollPercent >= 96){setIsScrolledEnough(true)}
-            else{setIsScrolledEnough(false);}
-        }
-    };
+    // const handleScroll = ()=>{
+    //     if(divRef.current){
+    //         const {scrollHeight, scrollTop, clientHeight} = divRef.current;
+    //         const scrollPosition = scrollTop + clientHeight;
+    //         const scrollPercent = (scrollPosition/scrollHeight)*100;
+    //         if(scrollPercent >= 96){setIsScrolledEnough(true)}
+    //         else{setIsScrolledEnough(false);}
+    //     }
+    // };
 
-    useEffect(()=>{
-        const currentDiv = divRef.current;
-            currentDiv?.addEventListener("scroll",handleScroll);
-        return ()=>{
-            currentDiv?.removeEventListener("scroll",handleScroll);
-        }
-    },[divRef]);
+    // useEffect(()=>{
+    //     const currentDiv = divRef.current;
+    //         currentDiv?.addEventListener("scroll",handleScroll);
+    //     return ()=>{
+    //         currentDiv?.removeEventListener("scroll",handleScroll);
+    //     }
+    // },[divRef]);
 
     return (
         <div className="text-white scroll-mt-[150px]" ref={ref}>

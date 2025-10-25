@@ -16,7 +16,7 @@ const WorkExp = forwardRef<HTMLDivElement,WorkExpProps>((props, ref) => {
 
 const InsideWorkExp = ()=>{
     return (
-        <div className="border-0 text-white flex items-center justify-around grid-cols-3 h-128">
+        <div className="border-0 text-white flex items-center justify-around grid-cols-3 ">
             
             <div className="w-1/12 md:w-1/4 border-0 h-full bg-gray-0"></div>
 
@@ -36,7 +36,7 @@ const InsideWorkExp = ()=>{
                             </p>                             
                         </div>
                         <div style={{position: 'relative'}} className=" row-span-7 h-40">
-                            <div className="border-1 rounded bg-gray-0/60 border-gray-400 px-2 h-full scrollbar overflow-y-scroll scroll-smooth scrollbar-thumb-green-700/60 scrollbar-track-white scrollbar-thin">
+                            <div className="border-1 rounded bg-gray-0/60 border-gray-400 px-2 h-full scroll-smooth scrollbar-thumb-green-700/60 scrollbar-track-white scrollbar-thin">
                                 <p>
                                     Worked as a backend developer using the MERN (MongoDB, Express.js, React.js, Node.js) stack, building RESTful APIs, implementing authentication/ authorization, and optimizing database operations. Collaborated with frontend teams to ensure smooth data handling and efficient debugging. Applied best practices for writing scalable, maintainable code, improving performance, and deploying real-world projects. Gained practical experience with Express.js, MongoDB, and Node.js while enhancing problem-solving and teamwork skills.
                                 </p>
@@ -58,7 +58,7 @@ const InsideWorkExp = ()=>{
                             </p>                             
                         </div>
                         <div style={{position: 'relative'}} className=" row-span-7 h-40">
-                            <div className="border-1 rounded bg-gray-0/60 border-gray-400 px-2 h-full scrollbar overflow-y-scroll scroll-smooth scrollbar-thumb-green-700/60 scrollbar-track-white scrollbar-thin">
+                            <div className="border-1 rounded bg-gray-0/60 border-gray-400 px-2 h-full scroll-smooth scrollbar-thumb-green-700/60 scrollbar-track-white scrollbar-thin">
                                 <p>
                                     Worked as a remote Teaching Assistant for the Data Structure and Algorithm course in C++, supporting over 400 students by resolving doubts and clarifying concepts. Provided guidance to more than 300 students through one-on-one sessions and discussion forums, helping them strengthen problem-solving skills and coding practices. Maintained an average rating of 4.4/5, reflecting effective communication, patience, and a strong understanding of algorithms and data structures. Gained valuable experience in mentoring, explaining complex topics clearly, and improving students' confidence in programming.
                                 </p>
