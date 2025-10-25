@@ -25,7 +25,7 @@ const App:React.FC =()=> {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className='h-screen w-screen bg-[#f12a10]'>
+        <div className='h-screen w-screen bg-[#0a0d1d]'>
           {/* <Beams                
             beamWidth={60}
             beamHeight={36}
