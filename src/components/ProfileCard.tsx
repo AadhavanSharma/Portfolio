@@ -330,7 +330,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                     {
                       k.width>768?
                       <button
-                        className="pc-contact-btn cursor-pointer rounded-md min-h-8 flex items-center uppercase shine-effect-3 md:relative md:left-2"
+                        className="pc-contact-btn bg-gray-900/8 cursor-pointer rounded-md min-h-8 flex items-center uppercase shine-effect-3 md:relative md:left-2"
                         onClick={handleContactClick}
                         style={{ pointerEvents: 'auto' }}
                         type="button"
@@ -340,7 +340,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                       </button>
                         :
                         <a
-                          className="pc-contact-btn rounded-md min-h-8 flex items-center uppercase shine-effect-3 md:relative md:left-2"
+                          className="pc-contact-btn bg-gray-900/8 rounded-md min-h-8 flex items-center uppercase shine-effect-3 md:relative md:left-2"
                           style={{ pointerEvents: 'auto' }}
                           type="button"
                           aria-label={`Contact ${name || 'user'}`}
