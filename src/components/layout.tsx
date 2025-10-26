@@ -77,7 +77,7 @@ const Layout = ({scrollableRef}:LayoutProps) => {
                       style = {{fontFamily :"Parkinsans"}}
                         className="tracking-widest bg-gradient-to-b from-[#f5ffbd] via-[#d7d8d0] to-[#9c9b6a] bg-clip-text text-transparent font-sans
                         px-2 mx-2 text-3xl flex items-center border-0 border-amber-300 md:text-5xl lg:text-5xl xl:text-7xl"
-                        text={["Hi there!", "Namaste!", "Sat Srī Akāl!", "Hola AmiGo!"]}
+                        text={["Hi there!", "Namaskār!", "Sat Srī Akāl!", "Hola AmiGo!"]}
                         typingSpeed={50}
                         pauseDuration={2000}
                         showCursor={false}
