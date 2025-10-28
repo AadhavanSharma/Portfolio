@@ -18,7 +18,7 @@ import useWindowDimensions from "@/hooks/window-dimensions";
 import ResumeWindow from "./resume-window";
 import TextType from "./TextType";
 import { Download } from "lucide-react";
-// import Plasma from './Plasma';
+import ResumeDaPath from '/sharmaAadhavanCV.pdf'
 
 type LayoutProps = {
   scrollableRef:React.RefObject<HTMLDivElement | null>;
@@ -98,14 +98,11 @@ const Layout = ({scrollableRef}:LayoutProps) => {
                         <ResumeWindow/>
                       </div>
                       <div className="border-0 border-amber-200 flex items-center justify-center col-span-2 md:col-span-1">
-                        {/* <ResumeWindow/> */}
-                        <a target = "_blank" href="https://drive.google.com/file/d/10e--TUda8SSHu03GhRdvN3zCBF-LpcZA/view?usp=sharing" 
-                        // className="cursor-pointer scale-140 border-0 shine-effect-2 rounded-xl underline px-4 py-1 flex gap-2 items-center"
-                          className="flex md:text-2xl items-center cursor-pointer rounded-2xl underline underline-offset-1 py-3 px-2 gap-2 relative right-2">
-
-                          Download Resume
-                          <Download className="text-gray-300"/>
-                          {/* <img className="size-6" src="popup.png" alt="pdf"></img> */}
+                        <a href={ResumeDaPath} download="sharmaAadhavanCV"
+                        className="flex md:text-[22px] items-center cursor-pointer rounded-2xl underline underline-offset-1 py-3 px-2 gap-2 relative right-2"
+                        >
+                            Download My Resume
+                            <Download className="text-gray-300"/>
                         </a>
                       </div>
                     </div>
